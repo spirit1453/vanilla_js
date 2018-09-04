@@ -47,7 +47,7 @@
     "jest": "DEBUG=debug jest --coverage",
     "lint": "eslint --fix .",
     "precommit": "npm test",
-    "preinstall": "node bin/preinstall",
+    "postinstall": "node bin/postinstall",
     "prepush": "npm test",
     "start": "",
     "task": "gulp",

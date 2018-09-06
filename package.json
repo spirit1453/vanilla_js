@@ -37,7 +37,7 @@
   "name": "@ys/vanilla",
   "repository": {
     "type": "git",
-    "url": "https://github.com/spirit1453/codebase.git#js_collection"
+    "url": ""
   },
   "scripts": {
     "build": "babel src/ -d lib/",

@@ -10,6 +10,14 @@ class Cls {
   static warn (ary) {
     printMessage(ary, {color: 'yellow', borderColor: 'green'})
   }
+  static isAllNull (...ary) {
+    for (let ele of ary) {
+      if (ele) {
+        return false
+      }
+    }
+    return true
+  }
 }
 
 Object.freeze(Cls)

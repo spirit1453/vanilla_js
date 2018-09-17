@@ -1,9 +1,7 @@
 /* eslint-disable new-cap */
 
 const aesjs = require('aes-js')
-const path = require('path')
-const rootPath = path.resolve(__dirname, '../../')
-const config = require(path.resolve(rootPath, 'config'))
+const config = require('../../config')
 
 const {encrypt} = config
 const {aesKey, counter} = encrypt

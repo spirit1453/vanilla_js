@@ -1,19 +1,21 @@
 {
   "author": "",
-  "bin": [],
+  "bin": {},
   "bugs": {
     "url": ""
   },
   "private": true,
   "dependencies": {
+    "aes-js": "^3.1.1",
     "debug": "^3.1.0",
+    "inquirer": "^6.2.0",
     "lodash": "^4.17.10",
     "print-message": "^2.1.0",
     "uuid": "^3.3.2"
   },
   "description": "js collection",
   "devDependencies": {
-    "@ys/eslint-config-strict": "git+https://github.com/spirit1453/codebase.git#strict_eslint",
+    "@ys/eslint-config-strict": "github:spirit1453/codebase#strict_eslint",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
     "babel-preset-flow": "^6.23.0",

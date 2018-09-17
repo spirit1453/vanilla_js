@@ -19,7 +19,6 @@ class Cls {
     const encryptedBytes = aesjs.utils.hex.toBytes(encryptData)
     const aesCtr = new aesjs.ModeOfOperation.ctr(aesKey, new aesjs.Counter(counter))
     const decryptedBytes = aesCtr.decrypt(encryptedBytes)
-
     const decryptedText = aesjs.utils.utf8.fromBytes(decryptedBytes)
     return decryptedText
   }

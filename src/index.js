@@ -1,10 +1,11 @@
 /* eslint-disable global-require */
 const result = {
-  DateUtil: require('./util/DateUtil'),
-  StringUtil: require('./util/StringUtil'),
   CliUtil: require('./util/CliUtil'),
   CryptoUtil: require('./util/CryptoUtil'),
-  FileUtil: require('./util/FileUtil')
+  DateUtil: require('./util/DateUtil'),
+  FileUtil: require('./util/FileUtil'),
+  FuncUtil: require('./util/FuncUtil'),
+  StringUtil: require('./util/StringUtil')
 }
 
 Object.freeze(result)

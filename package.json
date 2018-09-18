@@ -43,7 +43,8 @@
     "postinstall": "node bin/postinstall",
     "start": "",
     "task": "gulp",
-    "test": "npm run lint && npm run jest"
+    "test": "npm run lint && npm run jest",
+    "sync": "node bin/sync"
   },
   "version": "0.0.1"
 }

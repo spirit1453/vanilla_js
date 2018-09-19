@@ -5,6 +5,7 @@ const result = {
   DateUtil: require('./util/DateUtil'),
   FileUtil: require('./util/FileUtil'),
   FuncUtil: require('./util/FuncUtil'),
+  GitUtil: require('./util/GitUtil'),
   StringUtil: require('./util/StringUtil')
 }
 

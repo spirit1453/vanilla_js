@@ -21,7 +21,15 @@ class FuncUtil {
       const sCount = Math.floor(result / 1000)
       const s = sCount % 60
       const minCount = Math.floor(sCount / 60)
-      result = `${minCount}min-${s}s-${ms}ms`
+      let minStr = ''
+      let sStr = ''
+      if (minCount) {
+        minStr = `${minCount}min-`
+      }
+      if (s) {
+        sStr = `${s}s-`
+      }
+      result = `${minStr}${sStr}${ms}ms`
     }
     return result
   }

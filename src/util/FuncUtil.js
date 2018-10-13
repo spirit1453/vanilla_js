@@ -33,6 +33,11 @@ class FuncUtil {
     }
     return result
   }
+  static runFunc (func) {
+    if (func) {
+      func()
+    }
+  }
 }
 
 Object.freeze(FuncUtil)

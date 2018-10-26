@@ -9,7 +9,7 @@ class FuncUtil {
     })
   }
   static async timeCount (func, option = {}) {
-    const {shouldFormat = true} = option
+    const {shouldFormat = true, shouldLog = true} = option
     const start = Date.now()
     const returnValue = func()
     if (isPromise(returnValue)) {
@@ -30,6 +30,9 @@ class FuncUtil {
         sStr = `${s}s-`
       }
       result = `${minStr}${sStr}${ms}ms`
+    }
+    if (shouldLog) {
+      console.log(`time elapsed: ${result}`)
     }
     return result
   }

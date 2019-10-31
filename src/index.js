@@ -6,7 +6,8 @@ const result = {
   FileUtil: require('./util/FileUtil'),
   FuncUtil: require('./util/FuncUtil'),
   GitUtil: require('./util/GitUtil'),
-  StringUtil: require('./util/StringUtil')
+  StringUtil: require('./util/StringUtil'),
+  TimeUtil: require('./util/TimeUtil')
 }
 
 Object.freeze(result)

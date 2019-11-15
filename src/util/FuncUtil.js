@@ -42,6 +42,18 @@ class FuncUtil {
       func()
     }
   }
+  static continue(func, option = {}) {
+    let {conditionalFunc} = option
+    const defaultConditionalFunc = () => {return true}
+    conditionalFunc = conditionalFunc || defaultConditionalFunc
+    try {
+      func()
+    } catch(error) {
+      if (conditionalFunc) {
+        func()
+      }
+    }
+  }
 }
 
 Object.freeze(FuncUtil)

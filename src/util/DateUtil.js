@@ -8,7 +8,7 @@ class Cls {
   static getTimeDisplay (date) {
     date = date || new Date()
 
-    const result = moment(date).format('YYYY-MM-DD_HH:mm')
+    const result = moment(date).format('YYYY-MM-DD_HH:mm:ss')
     return result
   }
 }

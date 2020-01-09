@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 const result = {
   ArrayUtil: require('./util/ArrayUtil'),
+  AssertUtil: require('./util/AssertUtil'),
   CliUtil: require('./util/CliUtil'),
   CryptoUtil: require('./util/CryptoUtil'),
   DateUtil: require('./util/DateUtil'),

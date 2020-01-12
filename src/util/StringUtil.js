@@ -13,6 +13,12 @@ class Cls {
     result = result.replace(/\n/g, replaceStr)
     return result
   }
+
+  static formatStr(option) {
+        const {unit, count} = option
+
+        return new Array(count).fill(unit).join('')
+  }
 }
 
 Object.freeze(Cls)

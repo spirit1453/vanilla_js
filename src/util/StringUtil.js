@@ -17,6 +17,12 @@ class Cls {
   static capitalizeFirst(str) {
        return str[0].toUpperCase() + str.substring(1)
   }
+
+  static formatStr(option) {
+        const {unit, count} = option
+
+        return new Array(count).fill(unit).join('')
+  }
 }
 
 Object.freeze(Cls)

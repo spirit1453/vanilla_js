@@ -13,6 +13,10 @@ class Cls {
     result = result.replace(/\n/g, replaceStr)
     return result
   }
+
+  static capitalizeFirst(str) {
+       return str[0].toUpperCase() + str.substring(1)
+  }
 }
 
 Object.freeze(Cls)

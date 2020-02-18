@@ -10,7 +10,8 @@ const result = {
   GitUtil: require('./util/GitUtil'),
   ObjectUtil: require('./util/ObjectUtil'),
   StringUtil: require('./util/StringUtil'),
-  TimeUtil: require('./util/TimeUtil')
+  TimeUtil: require('./util/TimeUtil'),
+  UrlUtil: require('./util/UrlUtil')
 }
 
 Object.freeze(result)
